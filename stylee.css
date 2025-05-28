@@ -1,0 +1,133 @@
+/* Part 1 : Mengatur tampilan web secara umum  */
+/* Mengatur font yang akan digunakan dengan cara mengaksesnya secara online
+dengan menggunakan perintah import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Mengatur padding dan margin keseluruhan halaman web */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+/* Mengatur tata letak dan ukuran menu pada header */
+header {
+    position: static; /* Mengikuti ukuran halaman web dalam hal ini posisinya berada di header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between; /*Memberi jarak pada setiap menu atau navigasi */
+    align-items: center;
+    z-index: 100;
+}
+
+/* Part 2 : Mengatur setiap kelas yang sudah didefenisikan di HTML */
+.logo{
+    font-size:100pv;
+    color:cornflowerblue
+}
+
+/* Mengatur Logo bagian span */
+.logo span{
+    color:darksalmon
+}
+
+.navigation{
+    margin-left: 30px;
+}
+
+.navigation a {
+    font-size:medium;
+    /* Mengatur ukuran huruf navigasi atau menu */
+    color: rgb(98, 98, 224);
+    /* Mengatur warna menu */
+    margin-right: 30px;
+    /* mengatur jarak antar menu (home, portfolio,dll */
+    text-decoration: 0;
+    /* Menghilangkan underline pada menu */
+    font-weight: 400;
+    /* mengatur ketebalan huruf */
+    transition: .0s;
+}
+
+.navigation a:hover {
+    color: rgb(248, 107, 236);
+    text-decoration: underline;
+}
+
+.home {
+    position: relative;
+    width: 100%; /* Mengatur tinggi gambar */
+    height: 83vh; /* Mengatur lebar gambar */
+    background: url('yay.jpg'); /* Menambahkan gambar background */
+    background-size: cover; /* Mengatur size gambar */
+    background-position: center; /* Mengatur posisi gambar */
+    display: flex; /* Mengatur letak  */
+    align-items: flex-start;
+    padding: 60px;
+}
+
+.content {
+    max-width: 500px;
+    color: #000000;
+}
+
+/* Mengatur ukuran heading 1 yang sudah didefiniskasn di HTML */
+.content h1 {
+    font-size: 48px;
+    color:rgb(203, 117, 131);
+}
+
+.content h4 {
+    font-size: 34px;
+    /* Mengatur ukuran huruf h4 yang telah didefinisikan di HTML agar
+    kurannya lebih besar */
+    color:rgb(136, 72, 195);
+}
+
+.content p {
+    padding: 10px 0 40px 0;
+    /* Mengatur batas atas, bawah, kiri dan kanan */
+    color:rgb(104, 45, 252);
+}
+
+/* Mengatur button */
+.btn-group a{
+    color:rgb(255, 255, 255) ;
+    background-color: rgb(75, 142, 181) ;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Mengatur hover pada button kedua button ketika di hover*/
+.btn-group a:hover{
+    color: white;
+    background-color: rgb(149, 112, 229);
+}
+
+/* Mengatur posisi icon media sosial */
+.social-icons {
+    position: absolute;
+    bottom: 80px;
+}
+
+.social-icons a {
+    background: rgb(46, 165, 216);
+    width: 35px; /* Mengatur lebar icon */
+    height: 35px; /* Mengatur tinggi icon */
+    line-height: 35px; /* Mengatur positi icon agar berada di tengah lingkaran */
+    text-align: center;
+    color: rgb(225, 239, 247);
+    border-radius: 20px; /* Mengatur border agar berbentuk lingkaran */
+}
+
+.social-icons a:hover{
+    background: rgb(246, 193, 243);
+    color : rgb(38, 38, 38);
+}
