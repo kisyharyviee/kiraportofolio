@@ -62,7 +62,7 @@ header {
 .home {
     position: relative;
     width: 100%; /* Mengatur tinggi gambar */
-    height: 83vh; /* Mengatur lebar gambar */
+    height: 90vh; /* Mengatur lebar gambar */
     background: url('yay.jpg'); /* Menambahkan gambar background */
     background-size: cover; /* Mengatur size gambar */
     background-position: center; /* Mengatur posisi gambar */
